@@ -1,0 +1,9 @@
+---
+build:
+    local: true
+    commands:
+    - docker build -t hell-php .
+execute:
+    local: true
+    commands:
+    - docker run -p 80:8080 hell-php
